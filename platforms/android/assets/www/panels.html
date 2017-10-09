@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>TESTING JS</title>
+	<link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.4.5.min.css" >
+	<link rel="stylesheet" type="text/css" href="./css/panel.css" >
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="./js/panel.js"></script>
+	<script type="text/javascript" src="./js/home.js"></script>
+	<style>
+	h1 {
+		border-bottom: 3px solid #3388cc;
+		color: #3388cc;
+		font-size: 30px;
+	}
+	table, th , td  {
+		border: 1px solid grey;
+		border-collapse: collapse;
+		padding: 5px;
+	}
+	table{
+		width:100%;
+	}
+	table tr:nth-child(odd) {
+		background-color: #f1f1f1;
+	}
+	table tr:nth-child(even) {
+		background-color: #ffffff;
+	}
+	p {
+		border-bottom: 3px solid #3388cc;
+	}
+	</style>
+	</head>
+
+<body>
+
+<!-- header -->
+<div id="kepala" data-role="header" style="margin-bottom:10px;">
+    <h5><a href="#left-panel" title="indigo"><img width="40" src="img/menu.svg" alt="indigo"></a></h5>
+	<h2><a href="#" title="indigo"><img src="img/logo.svg" alt="indigo" width="100px"></a></h2>
+
+</div>
+<!-- /header -->
+
+	<center>
+	<h1>SiPEN</h1>
+	<h2>Sistem Informasi Pendidikan</h2>
+	
+	<p>
+	<b>Wisma Kurnia</b><br>
+	Gang Desa, No. 71-72<br>
+	Jl. Raya Bojong Soang, Lengkong<br>
+	Bandung 42253</p>
+	</center>
+	
+	
+	
+	
+	
+	
+<!-- panel -->
+<div data-role="panel" data-position="left" data-position-fixed="false" data-display="overlay"  id="left-panel" data-theme="b">
+
+    <ul data-role="listview" class="ui-btn" data-theme="b">
+        <li id="beranda" data-icon="home"><a href="#">Beranda</a></li>
+        <li id="regis" data-icon="false"><a href="#">Register</a></li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Profil</h2>
+            <ul data-role="listview" data-theme="a">
+                <li id="profil" data-icon="user" data-theme="a"><a href="#">Lihat</a></li>
+                <li data-icon="edit" data-theme="a"><a href="#">Edit</a></li>
+            </ul>
+        </li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Nilai</h2>
+            <ul data-role="listview" data-theme="a">
+				<li id="uts" data-icon="false" data-theme="a"><a href="#">Start Up Saya</a></li>
+				<li id="uts" data-icon="false" data-theme="a"><a href="#">Start Up All</a></li>
+            </ul>
+        </li>
+        <li data-icon="false"><a href="#">Pengumuman</a></li>
+        <li data-icon="lock"><a href="#">Logout</a></li>
+    </ul>
+
+</div>
+<!-- /panel -->
+</body>
+</html>

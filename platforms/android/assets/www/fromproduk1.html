@@ -1,0 +1,116 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.4.5.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/panel.css" >
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="./js/panel.js"></script>
+    <script type="text/javascript" src="./js/uas.js"></script>
+    <script id="popup-arrow-script">
+        $.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+            $( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+            evt.preventDefault();
+        });
+    </script>
+    <style>
+        h1 {
+            border-bottom: 3px solid #3388cc;
+            color: #3388cc;
+            font-size: 30px;
+        }
+        table, th , td  {
+            border: 0px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table{
+            width:100%;
+        }
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+
+<!-- header -->
+<div id="kepala" data-role="header" style="margin-bottom:10px;">
+    <h5><a href="#left-panel" title="indigo"><img width="40" src="img/menu.svg" alt="indigo"></a></h5>
+	<h2><a href="#" title="indigo"><img src="img/logo.svg" alt="indigo" width="100px"></a></h2>
+
+</div>
+<!-- /header -->
+
+<!-- panel -->
+<div data-role="panel" data-position="left" data-position-fixed="false" data-display="overlay"  id="left-panel" data-theme="b">
+
+    <ul data-role="listview" class="ui-btn" data-theme="b">
+        <li id="beranda" data-icon="home"><a href="#">Beranda</a></li>
+        <li id="regis" data-icon="false"><a href="#">Register</a></li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Profil</h2>
+            <ul data-role="listview" data-theme="a">
+                <li id="profil" data-icon="user" data-theme="a"><a href="#">Lihat</a></li>
+                <li data-icon="edit" data-theme="a"><a href="#">Edit</a></li>
+            </ul>
+        </li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Nilai</h2>
+            <ul data-role="listview" data-theme="a">
+				<li id="uts" data-icon="false" data-theme="a"><a href="#">Start Up Saya</a></li>
+				<li id="uts" data-icon="false" data-theme="a"><a href="#">Start Up All</a></li>
+            </ul>
+        </li>
+        <li data-icon="false"><a href="#">Pengumuman</a></li>
+        <li data-icon="lock"><a href="#">Logout</a></li>
+    </ul>
+
+</div>
+<!-- /panel -->
+<br><br><br>
+<div style="background-color: tomato; margin: 10px; text-align: center">
+    <h3 style="color: white">PERSONIL INTI TEAM / CO-FOUNDER PERUSAHAAN</h3>
+</div>
+
+<div style="margin: 10px"><label >TEMPAT TANGGAL LAHIR</label>
+    <input type="text"  id="" name="" placeholder="TEMPAT TANGGAL LAHIR"  value="">
+    <label >EMAIL / HP</label>
+    <input type="text"  id="" name="" placeholder="EMAIL / HP" value="">
+    <label >PERAN DALAM TEAM </label>
+    <input type="text"  id="" name="" placeholder="PERAN DALAM TEAM" value="">
+    <label >RIWAYAT PENDIDIKAN TINGGI</label>
+    <input type="text"  id="" name="" placeholder="RIWAYAT PENDIDIKAN TINGGI" value="">
+    <label >RIWAYAT PEKERJAAN, USAHA, PROYEK</label>
+    <input type="text"  id="" name="" placeholder="RIWAYAT PEKERJAAN, USAHA, PROYEK" value="">
+    <label >PEKERJAAN SAAT INI</label>
+    <input type="text"  id="" name="" placeholder="PEKERJAAN SAAT INI" value="">
+    <label >DAFTAR KEAHLIAN UTAMA</label>
+    <input type="text"  id="" name="" placeholder="DAFTAR KEAHLIAN UTAMA" value="">
+    <label >APABILA DITERIMA INDIGO INCUBATOR</label>
+    <input type="text"  id="" name="" placeholder="APABILA DITERIMA INDIGO INCUBATOR" value="">
+    <label >PENCAPAIAN / PRESTASI / HAL KEREN</label>
+    <input type="text"  id="" name="" placeholder="PENCAPAIAN / PRESTASI / HAL KEREN" value="">
+    <label >AKUN TWITTER</label>
+    <input type="text"  id="" name="" placeholder="AKUN TWITTER" value="">
+    <label >AKUN FACEBOOK</label>
+    <input type="text"  id="" name="" placeholder="AKUN FACEBOOK" value="">
+    <label >AKUN LINKEDIN</label>
+    <input type="text"  id="" name="" placeholder="AKUN LINKEDIN" value="">
+    <table><tr>
+            <td><a href="#" id="fromproduk" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left ">BACK</a></td>
+            <td><a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left " data-transition="pop">SAVE</a></td>
+
+            <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                <form>
+                    <div style="padding:10px 20px;">
+                        <h3>Apakah Anda Yakin Data Yang Anda Isi Sudah Benar!</h3>
+                        <p><button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b  ui-icon-check">Yakin</button>
+                        <button id="fromproduk1" type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b  ui-icon-check">Batal</button></p>
+                    </div>
+                </form>
+            </div>
+    </tr></table>
+</div>
+

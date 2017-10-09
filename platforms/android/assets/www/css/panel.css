@@ -1,0 +1,91 @@
+/* Adjust the width of the left reveal menu. */
+#demo-page #left-panel.ui-panel {
+	width: 15em;
+}
+#demo-page #left-panel.ui-panel-closed {
+	width: 0;
+}
+#demo-page .ui-panel-page-content-position-left,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+	left: 15em;
+	right: -15em;
+}
+#demo-page .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: translate3d(15em,0,0);
+	-moz-transform: translate3d(15em,0,0);
+	transform: translate3d(15em,0,0);
+}
+
+/* Listview with collapsible list items. */
+.ui-listview > li .ui-collapsible-heading {
+	margin: 0;
+}
+.ui-collapsible.ui-li-static {
+	padding: 0;
+}
+.ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn {
+	margin-bottom: -1;
+}
+.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+	margin-bottom: -1;
+	border-top: none !important;
+}
+/* Nested list button colors */
+.ui-listview .ui-listview .ui-btn {
+	background: #fff;
+}
+.ui-listview .ui-listview .ui-btn:hover {
+	background: #38c;
+	color: #fff;
+	font-weight: normal;
+}
+.ui-listview .ui-listview .ui-btn:active {
+	background: #38c;
+	color: #fff;
+	font-weight: normal;
+}
+
+/* Reveal panel shadow on top of the listview menu (only to be used if you don't use fixed toolbars) */
+#demo-page .ui-panel-display-reveal {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+#demo-page .ui-panel-page-content-position-left {
+	-webkit-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+	-moz-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+	box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+}
+
+#left-panel{
+	background-color: #333333 !important;
+}
+.ui-header {
+	background-color: #FF0000 !important;
+}
+h5{
+	position: fixed !important;
+    top: -5 !important;
+    left: -100 !important;
+}
+#muka{
+	position: fixed;
+    top: 50;
+    left: 0;
+	right: 0;
+	bottom: 0;
+	background:#333;
+	color: white;
+	font-size:25;
+	font-weight:bold;
+}
+
+#kepala{
+	position: fixed;
+    top: 0;
+	right: 0;
+	left: 0;
+}
