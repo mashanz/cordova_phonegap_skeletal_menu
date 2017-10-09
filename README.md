@@ -1,0 +1,2 @@
+# cordova_phonegap_skeletal_menu
+Phonegap Templating
